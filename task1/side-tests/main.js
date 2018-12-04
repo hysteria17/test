@@ -9,8 +9,12 @@
 
 // console.log(i);
 
-let arr = [1,15,4],
-    i = arr.sort(compareNum);
+let div = document.createElement('div'),
+    text = document.createTextNode('This is me!');
+document.body.appendChild(div);
+div.textContent = "Hello, World!";
+let arr = [1,15,4,23,7],
+i = arr.sort(compareNum);
 
 function compareNum(a,b) {
     return a-b;
